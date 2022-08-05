@@ -1,0 +1,14 @@
+version: '3.7'
+
+services:
+    imagich:
+        build: .
+        image: imagich
+        container_name: imagich
+
+    rabbitmq:
+        container_name: rabbitmq
+        image: rabbitmq
+
+        ports:
+            - '15672:15672'
